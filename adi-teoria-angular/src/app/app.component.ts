@@ -24,7 +24,7 @@ export class AppComponent {
 
   }
 
-  addTask(taskName : string):void {
+  addTask():void {
     
     console.log("Add task button is clicked. name" + this.taskNameForm);
     var taskAux : Task = {itemIndex:"", item : this.taskNameForm};
