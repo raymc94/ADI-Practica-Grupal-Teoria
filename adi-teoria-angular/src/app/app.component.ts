@@ -8,21 +8,13 @@ import { Task } from "./api-consummer/model/task";
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  public task: Task = { itemIndex: "", item: "hola" };
+  public task: Task = { itemIndex: "", item: "" };
   public tasks: Task[];
   public taskNameForm : string = "";
   title = 'adi-teoria-angular';
 
   constructor(private apiservice: ApiService) {
-    this.tasks = [ {
-      "itemIndex": "1",
-      "item": "Objeto1"
-      },
-      {
-        "itemIndex": "2",
-        "item": "Objeto2"
-        },
-    ];
+    this.tasks = [];
    }
 
   deleteTask(id : string):void {
