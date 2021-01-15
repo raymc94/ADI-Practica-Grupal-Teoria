@@ -49,7 +49,7 @@ app.post("/", function(pet, resp){
         var obj = {itemIndex:itemIndex, item:item};
         lista.set(itemIndex, obj);
         resp.status(201);
-        resp.setHeader('Location','http://localhost:3000/'+itemIndex);
+        resp.setHeader('Location','http://localhost:9000/'+itemIndex);
         itemIndex++;
         resp.send(obj);
     }
